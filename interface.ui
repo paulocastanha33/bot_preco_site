@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>477</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Robô de Monitoramento Diário de Preço</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: black;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>50</y>
+      <width>411</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 98%;
+padding: 10px;
+border-radius: 12px;
+
+background-color: #323232;
+color: white;
+font-family: 'Orbitron', sans-serif;
+letter-spacing:4px;</string>
+    </property>
+    <property name="title">
+     <string>   CONSULTA DE PREÇOS AUTOMATIZADA</string>
+    </property>
+    <widget class="QPushButton" name="btn_iniciar">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>50</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:white;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid green;
+background-color: lime;
+color: black;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color:white;
+    color:black;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>INICIAR</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_parar">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>50</y>
+       <width>101</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+width: 98%;
+padding: 10px;
+border-color:white;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid yellow;
+background-color: red;
+color: black;
+font-family: 'Orbitron', sans-serif;
+}
+QPushButton:hover{
+	background-color:white;
+    color:black;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>PARAR</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="lbl_status">
+    <property name="geometry">
+     <rect>
+      <x>37</x>
+      <y>200</y>
+      <width>671</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #323232;
+color: lime;
+border-radius: 12px;
+font-size: 10pt;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="table_historico">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>321</y>
+      <width>681</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>681</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 10pt &quot;Ubuntu&quot;;
+background-color: white;</string>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>169</number>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>PRODUTO</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>DATA ATUAL</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>VALOR</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>LINK</string>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>196</x>
+      <y>263</y>
+      <width>161</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; color:#26a269;&quot;&gt;PREÇO DO PRODUTO:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lbl_preco">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>249</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">width: 98%;
+padding: 10px;
+border-color:white;
+border-top-left-radius: 15px;
+border-bottom-right-radius: 12px;
+border:2px solid lime;
+background-color: black;
+color: white;
+font-family: 'Orbitron', sans-serif;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>43</x>
+      <y>179</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(230, 97, 0);
+letter-spacing:4px;</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;STATUS:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

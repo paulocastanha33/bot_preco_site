@@ -1,0 +1,8 @@
+
+### requirements.txt
+
+```txt
+selenium
+openpyxl
+schedule
+PyQt5
