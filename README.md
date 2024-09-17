@@ -17,9 +17,3 @@ Bot_Preço_Site é um aplicativo desenvolvido em Python que consulta o preço de
 - [Google Chrome](https://www.google.com/intl/pt-BR/chrome/)
 - [ChromeDriver](https://sites.google.com/chromium.org/driver/) (Certifique-se de que a versão do ChromeDriver corresponda à versão do Chrome instalada)
 
-### Dependências
-
-Instale as dependências do projeto usando o pip:
-
-```bash
-pip install -r requirements.txt
